@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('A random AWSOME idea:'),
+          Text('A random YAYAYAYYAYAYAYAyidea:'),
           BigCard(pair: pair),
           ElevatedButton(
             onPressed: () {
