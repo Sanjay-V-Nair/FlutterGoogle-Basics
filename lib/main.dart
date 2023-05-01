@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('A random YAYAYAYYAYAYAYAyidea:'),
+          Text('A random AWSOME idea:'),
           BigCard(pair: pair),
           ElevatedButton(
             onPressed: () {
@@ -65,6 +65,14 @@ class BigCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(pair.asLowerCase);
+    var theme = Theme.of(context);
+
+    return Card(
+      color: theme.colorScheme.primary,
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Text(pair.asLowerCase),
+      ),
+    );
   }
 }
